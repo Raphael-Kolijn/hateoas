@@ -38,6 +38,6 @@ public class GreetingMockMvcTests {
     @Test
     public void envEndpointNotHidden() throws Exception {
         mockMvc.perform(get("/greeting"))
-            .andExpect(jsonPath("$.content").value("Hello, World!"));
+            .andExpect(jsonPath("$.content").value("Hello, worldfrom  NL!"));
     }
 }
